@@ -5,4 +5,4 @@ if(n>1):
         t=int(input())
         if(t>m):
             m=t
-print(f"greatest number is" ,m if m>0 else "enter values") 
+print(f"greatest number is" ,m if m>0 else "enter values")
