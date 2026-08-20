@@ -1,0 +1,25 @@
+class Employee:
+    def __init__(self, first_name, last_name, monthly_salary):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.monthly_salary = monthly_salary
+
+    def yearly_salary(self):
+        return self.monthly_salary * 12
+
+    def increase_salary(self):
+        self.monthly_salary *= 1.10
+
+emp1 = Employee("Soham", "Gurav", 30000)
+emp2 = Employee("Rahul", "Patil", 40000)
+
+print("Before 10% Increase:")
+print("Employee 1:", emp1.yearly_salary())
+print("Employee 2:", emp2.yearly_salary())
+
+emp1.increase_salary()
+emp2.increase_salary()
+
+print("\nAfter 10% Increase:")
+print("Employee 1:", emp1.yearly_salary())
+print("Employee 2:", emp2.yearly_salary())
