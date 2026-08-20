@@ -1,0 +1,19 @@
+class Student:
+    def __init__(self, name, roll_no, total_marks):
+        self.name = name
+        self.roll_no = roll_no
+        self.total_marks = total_marks
+
+    def display(self):
+        print("Student Name:", self.name)
+        print("Roll Number:", self.roll_no)
+        print("Total Marks:", self.total_marks)
+
+
+name = input("Enter Student Name: ")
+roll_no = input("Enter Roll Number: ")
+total_marks = float(input("Enter Total Marks: "))
+
+student = Student(name, roll_no, total_marks)
+
+student.display()
